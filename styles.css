@@ -1,17 +1,27 @@
 @import url(css/header.css);
+@import url(css/banner.css);
+@import url(css/nav.css);
+@import url(css/catalog.css);
+@import url(css/footer.css);
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
-  height: 72px;
-  margin: 0 81px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: calc(100% - 82px * 2);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 972px) {
+  .container {
+    width: 100%;
+    padding: 0 8px;
+  }
 }
 
 .btn {
@@ -24,4 +34,20 @@
 
 .btn:last-child {
   margin-right: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+ul, menu, li {
+  list-style: none;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

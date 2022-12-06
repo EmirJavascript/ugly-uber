@@ -1,0 +1,84 @@
+.banner {
+  width: 100%;
+  background-color: #D8D8D8;
+}
+
+.banner-inner {
+  height: 364px;
+  display: flex;
+  align-items: center;
+}
+
+.lorem-card {
+  background-color: #fff;
+  padding: 38px;
+  min-width: 389px;
+  height: 204px;
+}
+
+.lorem-card h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+
+  margin-bottom: 54px;
+}
+
+.lorem-card .lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lower .price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.lower .lower-info {
+  width: 97px;
+  height: 32px;
+  background-color: #262626;
+}
+
+@media screen and (max-width: 620px) {
+  .banner-inner {
+    height: 367px;
+    position: relative;
+  }
+
+  .lorem-card {
+    position: absolute;
+    width: calc(100% - 16px);
+    height: 204px;
+    min-width: auto;
+
+    margin-top: 25px;
+  }
+
+  .lorem-card h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .lorem-card .lower {
+    flex-direction: column;
+  }
+
+  .lower .price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-bottom: 16px;
+  }
+
+  .lower .lower-info {
+    width: 96.73px;
+  }
+}
